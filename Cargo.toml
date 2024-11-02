@@ -10,26 +10,20 @@ description = "Bindings between egui and macroquad"
 readme = "README.md"
 categories = ["gui", "game-development"]
 keywords = ["gui", "imgui", "immediate", "portable", "gamedev"]
-include = [
-  "LICENSE-APACHE",
-  "LICENSE-MIT",
-  "**/*.rs",
-  "Cargo.toml",
-]
+include = ["LICENSE-APACHE", "LICENSE-MIT", "**/*.rs", "Cargo.toml"]
 
 [dependencies]
-egui = "0.28.1"
+egui = "0.28.0"
 egui-miniquad = "0.15.0"
-
-macroquad = { version = "0.4.11", default-features = false }
-
+macroquad = "0.4.0"
+miniquad = "0.4.0"
 
 [features]
 default = ["audio"]
 audio = ["macroquad/audio"]
 
 [dev-dependencies]
-egui_demo_lib = "0.25.0"
+egui_demo_lib = "0.28.0"
 
 [profile.release]
 opt-level = 2
